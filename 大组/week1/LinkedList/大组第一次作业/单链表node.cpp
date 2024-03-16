@@ -1,15 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS  // 忽略 scanf_s 函数的警告
-
+#include "singlelist.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义链表节点结构
-struct ListNode {
-    int val;
-    struct ListNode* next;
-};
-
-// 创建链表节点
 struct ListNode* createNode(int val) {
     struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
     if (newNode == NULL) {
@@ -20,6 +12,7 @@ struct ListNode* createNode(int val) {
     newNode->next = NULL;
     return newNode;
 }
+
 
 // 向链表尾部添加节点
 void append(struct ListNode** headRef, int val) {
@@ -113,7 +106,7 @@ struct ListNode* recursiveReverse(struct ListNode* head) {
     head->next = NULL;
     return newHead;
 }
-// 非递归反转链表
+//非递归
 struct ListNode* iterativeReverse(struct ListNode* head) {
     struct ListNode* prev = NULL;
     struct ListNode* current = head;
@@ -125,53 +118,4 @@ struct ListNode* iterativeReverse(struct ListNode* head) {
         current = nextNode;
     }
     return prev;
-}
-
-// 主函数
-int main() {
-    struct ListNode* head = NULL;
-
-    // 从用户输入创建链表
-    int size;
-    printf("请输入链表的大小：");
-    scanf("%d", &size);
-    printf("请输入链表元素，以空格分隔：");
-    for (int i = 0; i < size; ++i) {
-        int val;
-        scanf("%d", &val);
-        append(&head, val);
-    }
-
-    // 打印原始链表
-    printf("原始链表：\n");
-    printList(head);
-
-    // 单链表奇偶调换
-    swapOddEven(head);
-    printf("单链表奇偶调换后：\n");
-    printList(head);
-
-    // 找到单链表的中点
-    int middle = findMiddle(head);
-    printf("单链表的中点：%d\n", middle);
-
-    // 判断链表是否成环
-    int hasCycleResult = hasCycle(head);
-    printf("链表是否成环：%s\n", hasCycleResult ? "是" : "否");
-
-    // 反转链表
-    head = reverse(head);
-    printf("反转链表后：\n");
-    printList(head);
-
-    // 递归反转链表
-    head = recursiveReverse(head);
-    printf("递归反转链表后：\n");
-    printList(head);
-    // 非递归反转链表
-    head = iterativeReverse(head);
-    printf("非递归反转链表后：\n");
-    printList(head);
-
-    return 0;
 }

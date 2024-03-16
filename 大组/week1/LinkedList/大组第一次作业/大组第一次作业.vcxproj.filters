@@ -15,11 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="单链表ADT.cpp">
+    <ClCompile Include="双链表ADT测试.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="双链表ADT.cpp">
+    <ClCompile Include="单链表ADT测试.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="双链表node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="单链表node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doublelist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="singlelist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
