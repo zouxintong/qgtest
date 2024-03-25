@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\大组",
-    "\\大组\\week1",
-    "\\大组\\week1\\LinkedList",
-    "\\大组\\week1\\LinkedList\\Sources"
+    "\\\u5927\u7EC4",
+    "\\\u5927\u7EC4\\week1",
+    "\\\u5927\u7EC4\\week1\\LinkedList",
+    "\\\u5927\u7EC4\\week1\\LinkedList\\Release",
+    "\\\u5927\u7EC4\\week1\\LinkedList\\Sources"
   ],
-  "SelectedNode": "\\大组\\week1\\LinkedList\\Sources\\main.cpp",
+  "SelectedNode": "\\\u5927\u7EC4\\week1\\LinkedList\\Sources",
   "PreviewInSolutionExplorer": false
 }

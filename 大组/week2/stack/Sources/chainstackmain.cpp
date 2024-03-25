@@ -12,7 +12,7 @@ int main() {
     initStack(stack);
     int choice, data;
 
-    printf("链栈功能演示\n");
+    printf("链栈\n");
 
     while (1) {
         printf("\n1. 入栈\n2. 出栈\n3. 获取栈顶元素\n4. 清空栈\n5. 销毁栈\n6. 检测栈长度\n7. 退出\n");
