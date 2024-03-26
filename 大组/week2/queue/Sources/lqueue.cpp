@@ -25,6 +25,7 @@ void DestroyLQueue(LQueue* Q) {
     }
     Q->front = Q->rear = NULL;  // 将队头和队尾指针置空
     Q->length = 0;              // 长度设为0
+    free(Q);
 }
 
 // 判断队列是否为空
