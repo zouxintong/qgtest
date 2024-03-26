@@ -5,8 +5,12 @@
     "\\\u5927\u7EC4\\week1",
     "\\\u5927\u7EC4\\week1\\LinkedList",
     "\\\u5927\u7EC4\\week1\\LinkedList\\Release",
-    "\\\u5927\u7EC4\\week1\\LinkedList\\Sources"
+    "\\\u5927\u7EC4\\week1\\LinkedList\\Sources",
+    "\\\u5927\u7EC4\\week2",
+    "\\\u5927\u7EC4\\week2\\queue",
+    "\\\u5927\u7EC4\\week2\\queue\\Headers",
+    "\\\u5927\u7EC4\\week2\\queue\\Sources"
   ],
-  "SelectedNode": "\\\u5927\u7EC4\\week1\\LinkedList\\Sources",
+  "SelectedNode": "\\\u5927\u7EC4\\week2\\queue\\Sources\\queuemain.cpp",
   "PreviewInSolutionExplorer": false
 }
