@@ -61,10 +61,10 @@ int main() {
     vector<int> data(dataSize);
     srand(time(0));
     for (int i = 0; i < dataSize; ++i) {
-        data[i] = rand() % 1000; 
+        data[i] = rand() % 1000;
     }
 
     testSorts(data, dataSize, iterations);
-
+    system("pause");
     return 0;
 }

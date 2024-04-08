@@ -17,7 +17,7 @@ void sortColors(vector<int>& nums) {
         else if (nums[i] == 1) {
             i++;
         }
-        else { 
+        else {
             swap(nums[i], nums[high]);
             high--;
         }
@@ -40,6 +40,6 @@ int main() {
         cout << num << " ";
     }
     cout << endl;
-
+    system("pause");
     return 0;
 }

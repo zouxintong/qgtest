@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// 快速排序中的分区函数
+// 分区函数
 int partition(vector<int>& arr, int low, int high) {
     int pivot = arr[high];
     int i = low - 1;
@@ -59,5 +59,6 @@ int main() {
     if (result != -1) {
         cout << "第 " << k << " 小的数为: " << result << endl;
     }
+    system("pause");
     return 0;
 }

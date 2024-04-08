@@ -116,6 +116,6 @@ int main() {
 
     cout << "¿ªÊ¼²âÊÔÅÅĞòËã·¨...\n";
     testSorts(data, iterations);
-
+    system("pause");
     return 0;
 }
